@@ -254,7 +254,7 @@ export default function HomePage() {
 
   if (isLoading) {
     return (
-      <div className="p-4 space-y-4">
+      <div className="p-8 space-y-4">
         <div className="h-44 md:h-80 bg-gray-200 rounded-3xl animate-pulse" />
         <div className="grid grid-cols-4 gap-3">
           {Array.from({ length: 8 }).map((_, i) => (
@@ -271,11 +271,11 @@ export default function HomePage() {
   return (
     <div className="bg-white">
       {/* Premium Hero */}
-      <div className="px-4 pt-3">
+      <div className="pb-3">
         <HeroCarousel />
       </div>
-
-      {/* Feature strip */}
+     <div className="max-w-6xl mx-auto">
+ {/* Feature strip */}
       <div className="px-4 mt-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
           {[
@@ -539,6 +539,8 @@ export default function HomePage() {
           </Link>
         </div>
       </section>
+     </div>
+     
     </div>
   )
 }

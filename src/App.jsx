@@ -77,6 +77,7 @@ function ContactPage() {
 
 function App() {
   return (
+
     <ResponsiveLayout>
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -97,6 +98,8 @@ function App() {
         <Route path="/gaming-mice" element={<ProductsPage />} />
       </Routes>
     </ResponsiveLayout>
+   
+
   )
 }
 

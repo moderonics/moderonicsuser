@@ -120,7 +120,7 @@ export default function HeroCarousel() {
 	}, [])
 
 	return (
-		<section className="relative rounded-3xl overflow-hidden shadow-2xl">
+		<section className="relative  overflow-hidden shadow-2xl">
 			<div
 				ref={containerRef}
 				className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar"
@@ -129,18 +129,18 @@ export default function HeroCarousel() {
 				{slides.map((s) => (
 					<div
 						key={s.id}
-						className="snap-start shrink-0 w-full relative h-[500px] md:h-[500px]"
+						className="snap-start shrink-0 w-full relative h-[550px] md:h-[550px]"
 						style={{ aspectRatio: "16/9" }}
 					>
 						<ImageWithFallback
 							src={s.image || "/placeholder.svg"}
 							alt={s.title}
-							className="w-full h-[500px] object-cover"
+							className="w-full h-[550px] object-cover"
 						/>
 						<div className="absolute inset-0 bg-black/30" />
 
 						{/* Brand gradient accent strip */}
-						<div className={`absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r ${brandGradient}`} />
+						<div className={`absolute top-0 inset-x-0 h-1.5`} />
 
 						{/* Text block */}
 						<div
